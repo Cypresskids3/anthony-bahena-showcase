@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/*
+    cadet grey: #93A8AC
+    non-photo-blue: #88D9E6
+    Lapis lazuli: #235789
+    battleship grey: #857F74
+    asparagus: #629460
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bangers';
+}
+
+body{
+    background: linear-gradient(0.25turn,#235789,#88D9E6,#235789);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5vmin;
+    background-color: #93A8AC;
+}
+
+.logo{
+    position: absolute;
+    left: 1vmin;
+    height: 5vmin;
+}
+.nav > a{
+    margin-left: 2vmin;
+    margin-right: 2vmin;
+    text-decoration: none;
+    color: #88D9E6;/*lightest color*/
+    font-size: 3vmin;
+    transition: .3s ease;
+}
+
+.nav > a:hover{
+    font-size:3.2vmin;
+    color: #235789; /*second lightest color*/
+}
+
+.content-box{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vmin;
+}
+
+.project-box{
+    width: 120vmin;
+    height: 80vmin;
+    background-color:whitesmoke ;
+    border-radius: 1.25vmin;
+    margin-bottom: 10vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.thumbnail{
+    width: 90vmin;
+    height: 50vmin;
+    border-radius: 1.25vmin;
+    margin-top: 2vmin;
+    margin-bottom: 2vmin;
+}
+
+.title{
+    font-size: 4vmin;
+    color:#235789;
+}
+
+.desc{
+    padding:2vmin;
+    text-align: center;
+    font-size:2vmin;
+    color: #93A8AC;
+}
+
+.project-link{
+    font-size: 3vmin;
+}
+@media only screen and (orientation: portrait) {
+    .project-box{
+        width: 60vmin;
+    }
+    .thumbnail{
+        width: 40vmin;
+    }
+}
